@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aantarika Design Studio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+	<style>
+	footer {
+		padding: 30px 0;
+	}
+
+	.footer-column p {
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+
+	.footer-column.about h2 {
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 26px;
+	}
+
+	.footer-column.contacts h3 {
+		color: #888888;
+		font-size: 18px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+
+	.footer-column.links h3,
+	.footer-column.services h3 {
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		line-height: 30px;
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	.footer-column.links li a {
+		color: #888888;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 37px;
+	}
+
+	.footer-column.services ul,
+	.footer-column.services p {
+		color: #888888;
+		list-style: none;
+		margin: 0 0 0 2%;
+		padding: 0;
+		font-size: 16px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		line-height: 35px;
+	}
+
+	.footer-column.services p {
+		font-size: 15px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+
+	.social-icons img {
+		width: 45px;
+	}
+
+	.footer-column.contacts p {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.footer-map img {
+		width: 100%;
+	}
+
+	.footer-content {
+		padding: 30px 0;
+		display: grid;
+        grid-template-columns: 1.7fr 0.8fr 1.7fr 0.9fr  ;
+		gap: 20px;
+	}
+
+	.social-icons {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		gap: 10px;
+		margin-top: 10px;
+	}
+
+	.footer-column {
+		margin-bottom: 20px;
+	}
+
+	.about img.logo {
+		width: 250px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column h2,
+	.footer-column h3 {
+		margin-bottom: 10px;
+	}
+
+	.footer-column.links ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 0 10%;
+	}
+
+	.footer-column ul li a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.social-icons i {
+		font-size: 20px;
+		margin: 0 10px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.send-request {
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+		background: no-repeat;
+		font-family: 'teko';
+		letter-spacing: 2px;
+		font-weight: 400;
+		line-height: 50px;
+	}
+
+	.footer-bottom p {
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
+		font-size: 16px;
+		color: #888888;
+		font-weight: 400;
+		line-height: 25px;
+	}
+
+	.send-request:hover {
+		background-color: #fff;
+		color: #000;
+		text-decoration: none;
+		transition: all 2s;
+		transform: scale(1.1);
+		border: 1px solid #000;
+	}
+    .footer-container {
+    width: 1250px;
+}
+@media (max-width: 1100px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer-map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        width: auto;
+        padding: 0 15px; /* Add padding to avoid content touching the edges */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        display: block; /* Ensures stacked layout for smaller screens */
+    }
+    .footer-column.links ul {
+        margin: 0 0 0 2%; /* Maintain consistency with small margins */
+    }
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap; /* Handle layout when icons don't fit in one row */
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+	
+	</style>
+</head>
+
+<body>
+	<footer style="
+  background: #040406;
+">
+		<div class="container footer-container">
+			<div class="footer-map">
+				<a href="https://www.google.com/maps/place/Aantarika+-+Interior+Design+Studio/@12.9105845,77.5948085,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae150bb893776b:0x3d8c02b09135fd26!8m2!3d12.9105845!4d77.5973834!16s%2Fg%2F11sr6j1qpf?entry=ttu&g_ep=EgoyMDI1MDEyMS4wIKXMDSoASAFQAw%3D%3D">
+					<img src="https://aantarika.com/assets/img/extra/map3.jpg" alt="">
+				</a>
+			</div>
+			<div class="footer-content ">
+				<div class="footer-column about ">
+					<a href="https://aantarika.com/"><img src="https://aantarika.com/assets/img/logo/logo3a.png" alt="Aantarika Logo" class="logo"></a>
+				
+					<p> We are Aantarika, the Leading Luxury Interior Designers in Bangalore. We are your one-stop solution for end-to-end home interiors, Modular Kitchens, Custom furniture design, turnkey interior designs, architectural solutions, exclusive home decor & more. </p>
+				</div>
+                <div class="footer-column links ">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Insights</a></li>
+						<li><a href="#">Newsletters</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+			
+				<div class="footer-column services ">
+					<h3>Our Services</h3>
+					<ul>
+						<li>Residential Interior Designers in Bangalore</li>
+						<li>Custom Modular Kitchen in Bangalore</li>
+						<li>Interior Design for 3 BHK Flat</li>
+						<li>Interior Design Firms in Bangalore</li>
+					</ul>
+					<h3>Get in touch with us</h3>
+					<p>Promising an unparalleled narrative of elegance, excellence, and enduring beauty.</p>
+					<a class="send-request">Send Request</a>
+				</div>
+				
+                <div class="footer-column contacts ">
+					<h3>General Enquiries:</h3>
+					<p><img src="images/Email-icon.png" alt=""> info@aantarika.com</p>
+					<p><img src="images/Phone-icon.png" alt=""> +91 96863 60414</p>
+					<p><img src="images/Phone-icon.png" alt=""> +91 96060 54606</p>
+					<h3>Services:</h3>
+					<p>service@aantarika.com</p>
+					<h3>Careers:</h3>
+					<p>careers@aantarika.com</p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/aantarika_design?igsh=MTAyNHZucW8zMmRw" target="_blank"><img src="images/Instagram-icon.png" alt=""></a>
+						<a href="https://youtube.com/@aantarika3184?si=4Rb-AakfkbwEPBcA" target="_blank"><img src="images/youtube-icon.png" alt=""></a>
+						<a href="https://wa.me/message/X2GF545W6EEOF1" target="_blank"><img src="images/whatsapp.png" alt=""></a>
+						<a href="https://www.facebook.com/profile.php?id=61550529658790" target="_blank"><img src="images/facebook-icon.png" alt=""></a>
+						<a href="#0" target="_blank"><img src="images/linked-in-icon.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Our Privacy Policy</p>
+				<p>COPYRIGHT 2025. ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
