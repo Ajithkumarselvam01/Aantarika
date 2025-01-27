@@ -17,7 +17,8 @@
 	footer {
 		padding: 30px 0 0 0;
 	}
-	ul{
+
+	ul {
 		list-style: none;
 	}
 
@@ -63,7 +64,7 @@
 		line-height: 37px;
 	}
 
-	.footer-column.services  .a-chan,
+	.footer-column.services .a-chan,
 	.footer-column.services p {
 		color: #888888;
 		list-style: none;
@@ -74,11 +75,12 @@
 		font-weight: 400;
 		line-height: 35px;
 	}
+
 	.footer-column.services ul {
-    margin: 0;
-    padding: 0;
-	list-style: none;
-}
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 
 	.footer-column.services p {
 		font-size: 15px;
@@ -102,7 +104,7 @@
 	.footer-content {
 		padding: 30px 0;
 		display: grid;
-        grid-template-columns: 1.7fr 0.8fr 1.7fr 0.9fr  ;
+		grid-template-columns: 1.7fr 0.8fr 1.7fr 0.9fr;
 		gap: 20px;
 	}
 
@@ -157,6 +159,7 @@
 		letter-spacing: 2px;
 		font-weight: 400;
 		line-height: 50px;
+		margin-left: 10px;
 	}
 
 	.footer-bottom p {
@@ -176,46 +179,64 @@
 		transform: scale(1.1);
 		border: 1px solid #000;
 	}
-    .footer-container {
-    width: 1250px;
-}
-@media (max-width: 1100px) {
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    .footer-map {
-        width: 100%;
-    }
-}
 
-@media (max-width: 900px) {
-    .footer-container {
-        width: auto;
-        padding: 0 15px; /* Add padding to avoid content touching the edges */
-    }
-}
+	.footer-container {
+		width: 1250px;
+	}
 
-@media (max-width: 768px) {
-    .footer-content {
-        display: block; /* Ensures stacked layout for smaller screens */
-    }
-    .footer-column.links ul {
-        margin: 0 0 0 2%; /* Maintain consistency with small margins */
-    }
-    .social-icons {
-        display: flex;
-        flex-wrap: wrap; /* Handle layout when icons don't fit in one row */
-        justify-content: center;
-        gap: 5px;
-    }
-} 
+	@media (max-width: 1300px) {
+		.footer-container {
+			width: 1100px !important;
+		}
+	}
 
-	
+	@media (max-width: 1200px) {
+		.footer-container {
+			width: 1000px !important;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.footer-content {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+		}
+
+		.footer-map {
+			width: 100%;
+		}
+
+		.footer-container {
+			width: auto !important;
+		}
+	}
+
+	@media (max-width: 900px) {}
+
+	@media (max-width: 768px) {
+		.footer-content {
+			display: block;
+			/* Ensures stacked layout for smaller screens */
+		}
+
+		.footer-column.links ul {
+			margin: 0 0 0 2%;
+			/* Maintain consistency with small margins */
+		}
+
+		.social-icons {
+			display: flex;
+			flex-wrap: wrap;
+			/* Handle layout when icons don't fit in one row */
+			justify-content: center;
+			gap: 5px;
+		}
+	}
 	</style>
 </head>
 
@@ -232,10 +253,9 @@
 			<div class="footer-content ">
 				<div class="footer-column about ">
 					<a href="https://aantarika.com/"><img src="https://aantarika.com/assets/img/logo/logo3a.png" alt="Aantarika Logo" class="logo"></a>
-				
 					<p> We are Aantarika, the Leading Luxury Interior Designers in Bangalore. We are your one-stop solution for end-to-end home interiors, Modular Kitchens, Custom furniture design, turnkey interior designs, architectural solutions, exclusive home decor & more. </p>
 				</div>
-                <div class="footer-column links ">
+				<div class="footer-column links ">
 					<h3>Quick Links</h3>
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -248,29 +268,37 @@
 						<li><a href="#">Careers</a></li>
 					</ul>
 				</div>
-			
 				<div class="footer-column services ">
 					<h3>Our Services</h3>
 					<ul>
 						<li><a class="a-chan" href="">Residential Interior Designers in Bangalore</a></li>
-						<li><a  class="a-chan" href="">Custom Modular Kitchen in Bangalore</a></li>
-						<li><a  class="a-chan" href="">Interior Design for 3 BHK Flat</a></li>
+						<li><a class="a-chan" href="">Custom Modular Kitchen in Bangalore</a></li>
+						<li><a class="a-chan" href="">Interior Design for 3 BHK Flat</a></li>
 						<li><a class="a-chan" href="">Interior Design Firms in Bangalore</a></li>
 					</ul>
 					<h3>Get in touch with us</h3>
 					<p>Promising an unparalleled narrative of elegance, excellence, and enduring beauty.</p>
 					<a class="send-request">Send Request</a>
 				</div>
-				
-                <div class="footer-column contacts ">
+				<div class="footer-column contacts ">
 					<h3>General Enquiries:</h3>
-                    <a href=""><p><img src="images/Email-icon.png" alt=""> info@aantarika.com</p></a>
-					<a href=""><p><img src="images/Phone-icon.png" alt=""> +91 96863 60414</p></a>
-					<a href=""><p><img src="images/Phone-icon.png" alt=""> +91 96060 54606</p></a>
+					<a href="">
+						<p><img src="images/Email-icon.png" alt=""> info@aantarika.com</p>
+					</a>
+					<a href="">
+						<p><img src="images/Phone-icon.png" alt=""> +91 96863 60414</p>
+					</a>
+					<a href="">
+						<p><img src="images/Phone-icon.png" alt=""> +91 96060 54606</p>
+					</a>
 					<h3>Services:</h3>
-					<a href=""><p>service@aantarika.com</p></a>
+					<a href="">
+						<p>service@aantarika.com</p>
+					</a>
 					<h3>Careers:</h3>
-				<a href="">	<p>careers@aantarika.com</p></a>
+					<a href="">
+						<p>careers@aantarika.com</p>
+					</a>
 					<div class="social-icons">
 						<a href="https://www.instagram.com/aantarika_design?igsh=MTAyNHZucW8zMmRw" target="_blank"><img src="images/Instagram-icon.png" alt=""></a>
 						<a href="https://youtube.com/@aantarika3184?si=4Rb-AakfkbwEPBcA" target="_blank"><img src="images/youtube-icon.png" alt=""></a>
